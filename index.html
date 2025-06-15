@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <h1>My Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
+      <button id="modeToggle" class="toggle-btn">🌙</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <img src="IMG/Profile.jpg" alt="Profile" class="profile-pic">
+    <h2>John Raemer Cabrera</h2>
+    <p class="subtitle">Aspiring Web Developer</p>
+    <p class="school">National University - MOA</p>
+  </section>
+
+  <section id="about" class="section container text-center">
+    <h3>About Me</h3>
+    <p>Hello! I'm a passionate student currently enrolled in the Bachelor of Science in Information Technology – Mobile and Web Applications (BSIT-MWA INF239) program at National University - MOA. I'm also an active member of the NU Student Government (NUSG). I enjoy crafting elegant, functional web solutions and continuously improving my skills in the digital space.</p>
+  </section>
+
+  <section id="skills" class="section-alt container">
+    <h3>Skills</h3>
+    <div class="skills-logos">  
+      <div class="skill-item">
+        <img src="IMG/htmlimg.png" alt="HTML Logo">
+        <span>HTML</span>
+      </div>
+      <div class="skill-item">
+        <img src="IMG/CSSimg.png" alt="CSS Logo">
+        <span>CSS</span>
+      </div>
+      <div class="skill-item">
+        <img src="IMG/JSimg.png" alt="JavaScript Logo">
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <img src="IMG/javaimg.webp" alt="Java Logo">
+        <span>Java</span>
+      </div>
+      <div class="skill-item">
+        <img src="IMG/PYIMG.png" alt="Python Logo">
+        <span>Python</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section container">
+    <h3>Projects</h3>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="IMG/Sprj1.png" alt="Project 1">
+        <h4>YESGANC Luxury Watches Shop</h4>
+        <p>This project is a fictional online store for luxury watches, designed with a modern aesthetic and clean layout. It highlights e-commerce layout design, responsive structure, and aesthetic brand presentation. Developed as part of our UI/UX web design activity.</p>
+        <a href="https://raemercabrera29.github.io/Project1/" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="IMG/Sprj2.png" alt="Project 2">
+        <h4>Profile</h4>
+        <p>This activity was focused on creating a personal digital profile using HTML and CSS. It allowed me to practice layout structure, visual identity, and content presentation in a basic but effective portfolio format.</p>
+        <a href="https://raemercabrera29.github.io/prj2/" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="IMG/Sprj3.png" alt="Project 3">
+        <h4>Sport Infographic</h4>
+        <p>An infographic project featuring the traditional Filipino game "Palo Sebo." This work showcases how visual communication can be integrated into web design to inform, educate, and promote culture using HTML and CSS layout styling.</p>
+        <a href="https://raemercabrera29.github.io/prj3/" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-alt container text-center">
+    <h3>Get in Touch</h3>
+    <p>Feel free to reach out via the links below:</p>
+    <div class="contact-links">
+      <a href="https://www.instagram.com/notrameer_" target="_blank">Instagram</a>
+      <a href="tel:09817189667">Contact Number</a>
+      <a href="mailto:raemercabrera.school@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 John Raemer Cabrera. All rights reserved.
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('modeToggle');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('light-mode');
+      toggleBtn.textContent = body.classList.contains('light-mode') ? '☀️' : '🌙';
+    });
+  </script>
+
+</body>
+</html>
